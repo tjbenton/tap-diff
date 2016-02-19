@@ -9,5 +9,5 @@ process.stdin
   .pipe(process.stdout);
 
 process.on('exit', status => {
-  if (status === 1 || reporter.isFailed) process.exit(1);
+  if (status === 1 || reporter.isFailed) process.exit(0);
 });
